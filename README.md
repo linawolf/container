@@ -7,7 +7,7 @@
 - No default containers, everything will be built the way its needed for a project
 - Supports multilanguage (connected or free mode (mixed mode not supported))
 - Supports workspaces
-- Supports colPos-restrictions if EXT:content_defender >= 3.1.0 is installed
+- Supports colPos-restrictions if [EXT:content_defender](https://extensions.typo3.org/extension/content_defender) >= 3.1.0 is installed (`composer req ichhabrecht/content-defender`)
 - Frontend Rendering via DataProcessor and Fluid templates
 
 ## Why did we create another "Grid" extension?
@@ -81,7 +81,7 @@ This is an example to create a 2 column container. The code snippet goes into a 
 | `setDefaultValues` | Default values for the newContentElement.wizardItems | `array $defaultValues` | `[]` |
 
 __Notes:__
-- If EXT:content_defender >= 3.1.0 is installed you can use `allowed`, `disallowed` and `maxitems` in the column configuration
+- If [EXT:content_defender](https://extensions.typo3.org/extension/content_defender) >= 3.1.0 (`composer req ichhabrecht/content-defender`) is installed you can use `allowed`, `disallowed` and `maxitems` in the column configuration
 - The container registry does multiple things:
   - Adds CType to TCA select items
   - Registers your icon
